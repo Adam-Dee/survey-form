@@ -11,17 +11,20 @@
 	<!-- Text form for participant's name -->
 	<label id="name-label" for="name">Name</label>
 	<input id="name" type="text" placeholder="Enter your name" name="name">
+	<br>
 
 	<!-- Email form for participant's email -->
 	<label id="email-label" for="email">Email</label>
 	<input id="email" type="email" placeholder="Enter your email" name="email">
+	<br>
 
 	<!-- Number form for participant's age -->
 	<label id="age-label" for="age">Age (optional)</label>
 	<input id="age" type="number" placeholder="Age" min="0" max="130" name="age">
+	<br>
 
 	<!-- Dropdown selection for favourite team -->
-	<label id="favteam-question" for="dropdown">What is your favourite Formula 1 team for the 2020 season?</label>
+	<p>What is your favourite Formula 1 team for the 2020 season?</p>
 	<select id="dropdown">
 		<option value="" disabled selected>Choose your favourite team</option>
 		<option value="alfaromeo">Alfa Romeo</option>
@@ -37,23 +40,33 @@
 	</select>
 
 	<!-- Dropdown selection for favourite driver -->
-	<label id="favdriver-question" for="driver">Who is your favourite Formula 1 Driver for the 2020 season?</label>
+	<p>Who is your favourite Formula 1 driver in the 2020 season?</p>
 	<select id="driver">
 		<option value="" disabled selected>Choose your favourite driver</option>
-		<option value="alfaromeo">Alfa Romeo</option>
-		<option value="alphatauri">AlphaTauri</option>
-		<option value="ferrari">Ferrari</option>
-		<option value="haas">Haas</option>
-		<option value="mclaren">McLaren</option>
-		<option value="mercedes">Mercedes</option>
-		<option value="racingpoint">Racing Point</option>
-		<option value="redbull">Red Bull Racing</option>
-		<option value="renault">Renault</option>
-		<option value="williams">Williams</option>
+		<option value="albon">Albon, Alexander</option>
+		<option value="bottas">Bottas, Valtteri</option>
+		<option value="gasly">Gasly, Pierre</option>
+		<option value="giovinazzi">Giovinazzi, Antonio</option>
+		<option value="grosjean">Grosjean, Romain</option>
+		<option value="hamilton">Hamilton, Lewis</option>
+		<option value="kvyat">Kvyat, Daniil</option>
+		<option value="latifi">Latifi, Nicholas</option>
+		<option value="leclerc">Leclerc, Charles</option>
+		<option value="magnussen">Magnussen, Kevin</option>
+		<option value="norris">Norris, Lando</option>
+		<option value="ocon">Ocon, Esteban</option>
+		<option value="perez">Perez, Sergio</option>
+		<option value="raikkonen">Raikkonen, Kimi</option>
+		<option value="ricciardo">Ricciardo, Daniel</option>
+		<option value="russell">Russell, George</option>
+		<option value="sainz">Sainz, Carlos</option>
+		<option value="stroll">Stroll, Lance</option>
+		<option value="verstappen">Verstappen, Max</option>
+		<option value="vettel">Vettel, Sebastian</option>
 	</select>
 
 	<!-- Radio selection for favourite engine constructor -->
-	<label for="engine">What is your favourite engine constructor?</label>
+	<p>What is your favourite engine constructor?</p>
 	<input name="engine" type="radio" value="ferrari" id="ferrari">
 	<label for="ferrari">Ferrari</label>
 	<br>
@@ -66,9 +79,80 @@
 	<input name="engine" type="radio" value="renault" id="renault">
 	<label for="renault">Renault</label>
 
+	<!-- Checkbox for least favourite circuits -->
+	<p>Which circuits would you <u>remove</u> from the 2020 calendar? (Check all that apply)</p>
+	<input type="checkbox" id="circuit1" name="circuit1" value="australia">
+	<label for="circuit1">Australia - Melbourne Grand Prix Circuit</label>
+	<br>
+	<input type="checkbox" id="circuit2" name="circuit2" value="bahrain">
+	<label for="circuit2">Bahrain - Bahrain International Circuit</label>
+	<br>
+	<input type="checkbox" id="circuit3" name="circuit3" value="vietnam">
+	<label for="circuit3">Vietnam - Hanoi Circuit</label>
+	<br>
+	<input type="checkbox" id="circuit4" name="circuit4" value="china">
+	<label for="circuit4">China - Shanghai International Circuit</label>
+	<br>
+	<input type="checkbox" id="circuit5" name="circuit5" value="netherlands">
+	<label for="circuit5">Netherlands - Zandvoort Circuit</label>
+	<br>
+	<input type="checkbox" id="circuit6" name="circuit6" value="spain">
+	<label for="circuit6">Spain - Circuit de Barcelona-Catalunya</label>
+	<br>
+	<input type="checkbox" id="circuit7" name="circuit7" value="monaco">
+	<label for="circuit7">Monaco - Circuit de Monaco</label>
+	<br>
+	<input type="checkbox" id="circuit8" name="circuit8" value="azerbaijan">
+	<label for="circuit8">Azerbaijan - Baku City Circuit</label>
+	<br>
+	<input type="checkbox" id="circuit9" name="circuit9" value="canada">
+	<label for="circuit9">Canada - Circuit Gilles-Villeneuve</label>
+	<br>
+	<input type="checkbox" id="circuit10" name="circuit10" value="france">
+	<label for="circuit10">France - Circuit Paul Ricard</label>
+	<br>
+	<input type="checkbox" id="circuit11" name="circuit11" value="austria">
+	<label for="circuit11">Austria - Red Bull Ring</label>
+	<br>
+	<input type="checkbox" id="circuit12" name="circuit12" value="greatbritain">
+	<label for="circuit12">Great Britain - Silverstone Circuit</label>
+	<br>
+	<input type="checkbox" id="circuit13" name="circuit13" value="hungary">
+	<label for="circuit13">Hungary - Hungaroring</label>
+	<br>
+	<input type="checkbox" id="circuit14" name="circuit14" value="belgium">
+	<label for="circuit14">Belgium - Circuit  de Spa-Francorchamps</label>
+	<br>
+	<input type="checkbox" id="circuit15" name="circuit15" value="italy">
+	<label for="circuit15">Italy - Autodromo Nazionale Monza</label>
+	<br>
+	<input type="checkbox" id="circuit16" name="circuit16" value="singapore">
+	<label for="circuit16">Singapore - Marina Bay Street Circuit</label>
+	<br>
+	<input type="checkbox" id="circuit17" name="circuit17" value="russia">
+	<label for="circuit17">Russia - Sochi Autodrom</label>
+	<br>
+	<input type="checkbox" id="circuit18" name="circuit18" value="japan">
+	<label for="circuit18">Japan - Suzuka International Racing Course</label>
+	<br>
+	<input type="checkbox" id="circuit19" name="circuit19" value="unitedstates">
+	<label for="circuit19">United States - Circuit of The Americas</label>
+	<br>
+	<input type="checkbox" id="circuit20" name="circuit20" value="mexicocity">
+	<label for="circuit20">Mexico City - Autodromo Hermanos Rodriguez</label>
+	<br>
+	<input type="checkbox" id="circuit21" name="circuit21" value="brazil">
+	<label for="circuit21">Brazil - Autodromo Hermanos Rodriguez</label>
+	<br>
+	<input type="checkbox" id="circuit22" name="circuit22" value="abudhabi">
+	<label for="circuit22">Abu Dhabi - Yas Marina Circuit</label>
 
+	<!-- Textfield for additional comments -->
+	<p>Tell us about your favourite F1 moment in the 2019 season!</p>
+	<input type="textarea" placeholder="Enter your comment here..."><br>
 
-
+	<!-- Submit button -->
+	<input type="submit" value="Submit">
 
 </form>
 
