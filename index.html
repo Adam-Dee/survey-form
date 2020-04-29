@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<h1 id="title">Formula 1 2020 Fan Survey</h1>
+<p>A short Formula 1 survey, just for fun!</p>
+
+<form id="survey-form">
+	<!-- Text form for participant's name -->
+	<label id="name-label" for="name">Name</label>
+	<input id="name" type="text" placeholder="Enter your name" name="name">
+
+	<!-- Email form for participant's email -->
+	<label id="email-label" for="email">Email</label>
+	<input id="email" type="email" placeholder="Enter your email" name="email">
+
+	<!-- Number form for participant's age -->
+	<label id="age-label" for="age">Age (optional)</label>
+	<input id="age" type="number" placeholder="Age" min="0" max="130" name="age">
+
+	<!-- Dropdown selection for favourite team -->
+	<label id="favteam-question" for="dropdown">What is your favourite Formula 1 team for the 2020 season?</label>
+	<select id="dropdown">
+		<option value="" disabled selected>Choose your favourite team</option>
+		<option value="alfaromeo">Alfa Romeo</option>
+		<option value="alphatauri">AlphaTauri</option>
+		<option value="ferrari">Ferrari</option>
+		<option value="haas">Haas</option>
+		<option value="mclaren">McLaren</option>
+		<option value="mercedes">Mercedes</option>
+		<option value="racingpoint">Racing Point</option>
+		<option value="redbull">Red Bull Racing</option>
+		<option value="renault">Renault</option>
+		<option value="williams">Williams</option>
+	</select>
+
+	<!-- Dropdown selection for favourite driver -->
+	<label id="favdriver-question" for="driver">Who is your favourite Formula 1 Driver for the 2020 season?</label>
+	<select id="driver">
+		<option value="" disabled selected>Choose your favourite driver</option>
+		<option value="alfaromeo">Alfa Romeo</option>
+		<option value="alphatauri">AlphaTauri</option>
+		<option value="ferrari">Ferrari</option>
+		<option value="haas">Haas</option>
+		<option value="mclaren">McLaren</option>
+		<option value="mercedes">Mercedes</option>
+		<option value="racingpoint">Racing Point</option>
+		<option value="redbull">Red Bull Racing</option>
+		<option value="renault">Renault</option>
+		<option value="williams">Williams</option>
+	</select>
+
+	<!-- Radio selection for favourite engine constructor -->
+	<label for="engine">What is your favourite engine constructor?</label>
+	<input name="engine" type="radio" value="ferrari" id="ferrari">
+	<label for="ferrari">Ferrari</label>
+	<br>
+	<input name="engine" type="radio" value="honda" id="honda">
+	<label for="honda">Honda</label>
+	<br>
+	<input name="engine" type="radio" value="mercedes" id="mercedes">
+	<label for="mercedes">Mercedes</label>
+	<br>
+	<input name="engine" type="radio" value="renault" id="renault">
+	<label for="renault">Renault</label>
+
+
+
+
+
+</form>
+
+
