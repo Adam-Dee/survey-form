@@ -1,8 +1,17 @@
-/*main {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}*/
+* {
+	color: white;
+	font-family: f1font;
+}
+
+body {
+	background-image: url("https://www.formula1.com/content/dam/fom-website/manual/Misc/2020/Misc/GettyImages-1180733959.jpg");
+	background-color: #cccccc;
+}
+
+@font-face {
+	font-family: f1font;
+	src: url(https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.ttf) format('truetype');
+}
 
 h1 {
 	display: flex;
@@ -28,7 +37,7 @@ h1 {
 */
 form {
 	padding: 100px 100px 100px 100px;
-	background-color: rgba(27, 27, 50, 0.7);
+	background-color: rgba(27, 27, 50, 0.9);
 }
 
 form div {
