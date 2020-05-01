@@ -7,6 +7,8 @@
 
 <body>
 
+<div class="bg-image"></div>
+
 <div class="heading">
 	<h1 id="title">Formula 1 2020 Fan Survey</h1>
 	<p id="info">A short Formula 1 survey, just for fun!</p>
@@ -17,24 +19,24 @@
 		<!-- Text form for participant's name -->
 		<div class="name-div">
 			<label id="name-label" for="name">Name</label>
-			<input id="name" type="text" placeholder="Enter your name" name="name">
+			<input id="name" type="text" placeholder="Enter your name" name="name" required>
 		</div>
 
 		<!-- Email form for participant's email -->
-		<div>
+		<div class="email-div">
 			<label id="email-label" for="email">Email</label>
-			<input id="email" type="email" placeholder="Enter your email" name="email">
+			<input id="email" type="email" placeholder="Enter your email" name="email" required>
 		</div>
 
 		<!-- Number form for participant's age -->
+		<div class="age-div">
 		<label id="age-label" for="age">Age (optional)</label>
-		<!-- <br> -->
 		<input id="age" type="number" placeholder="Age" min="0" max="130" name="age">
-		<!-- <br> -->
+		</div>
 		<!-- Dropdown selection for favourite team -->
 		<div>
 			<p>What is your favourite Formula 1 team for the 2020 season?</p>
-			<select id="dropdown">
+			<select id="dropdown" required>
 				<option value="" disabled selected>Choose your favourite team</option>
 				<option value="alfaromeo">Alfa Romeo</option>
 				<option value="alphatauri">AlphaTauri</option>
@@ -52,7 +54,7 @@
 		<!-- Dropdown selection for favourite driver -->
 		<div>
 			<p>Who is your favourite Formula 1 driver in the 2020 season?</p>
-			<select id="driver">
+			<select id="driver" required>
 				<option value="" disabled selected>Choose your favourite driver</option>
 				<option value="albon">Albon, Alexander</option>
 				<option value="bottas">Bottas, Valtteri</option>
@@ -80,7 +82,7 @@
 		<!-- Radio selection for favourite engine constructor -->
 		<div>
 			<p>What is your favourite engine constructor?</p>
-			<input name="engine" type="radio" value="ferrari" id="ferrari">
+			<input name="engine" type="radio" value="ferrari" id="ferrari" required>
 			<label for="ferrari">Ferrari</label>
 			<br>
 			<input name="engine" type="radio" value="honda" id="honda">
@@ -164,13 +166,13 @@
 		</div>
 
 		<!-- Textfield for additional comments -->
-		<div>
+		<div class="textarea-div">
 			<p>Tell us about your favourite F1 moment in the 2019 season!</p>
-			<input type="textarea" placeholder="Enter your comment here..."><br>
+			<textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
 		</div>
 
 		<!-- Submit button -->
-		<div>
+		<div class="submit-div">
 			<input type="submit" value="Submit">
 		</div>
 	</form>
